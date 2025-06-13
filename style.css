@@ -1,92 +1,46 @@
-/* Resetando alguns estilos padrão do navegador */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root{
+    --cor-fundo: #01080E;
+    --cor-principal: #0B0D20 ;
+    --cor-secundaria: #212333;
+    --cor-destaque: #2BDEFD;
+    --cor-texto: #D7F9FF;
 }
 
-/* Fonte geral */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+body{
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-/* Estilos do cabeçalho */
-header {
-    background-color: #00b140;
-    color: #fff;
-    padding: 20px 0;
-}
-
-header .container {
+.caixa-principal{
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
     text-align: center;
+    padding: 20px;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+h1{
+    color: var(--cor-destaque);
 }
 
-header p {
-    font-size: 1.2rem;
+button{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    transition: background-color 0.3s;
 }
 
-/* Estilos da seção de introdução */
-.intro {
-    background-color: #baccb4;
-    padding: 40px 20px;
-}s.
-
-.intro h2 {
-    text-align: center;
-    color: #00b140;
-    font-size: 2rem;
-    margin-bottom: 20px;
+button:hover{
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
 }
 
-.intro p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    text-align: justify;
-}
-
-/* Estilos dos objetivos */
-.objectives {
-    background-color: #ffffff;
-    padding: 40px 20px;
-}
-
-.objectives h2 {
-    text-align: center;
-    color: #00b140;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.objectives ul {
-    list-style: none;
-    padding: 0;
-}
-
-.objectives li {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    text-align: left;
-    padding-left: 20px;
-}
-
-/* Rodapé */
-.footer {
-    background-color: #00b140;
-    color: #000000;
-    padding: 20px 0;
-}
-
-.footer .container {
-    text-align: center;
-}
-
-.footer p {
-    font-size: 1rem;
+.caixa-perguntas{
+    padding-bottom: 10px;
 }
